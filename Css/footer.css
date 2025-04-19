@@ -1,0 +1,72 @@
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Sections du footer */
+.footer-info,
+.footer-links,
+.footer-social {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    /* Assure un bon affichage sur petits écrans */
+}
+
+/* Liens du footer */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    font-size: 18px;
+    /* Réduction pour plus d’harmonie */
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Icônes sociales */
+.footer-social {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    margin: 0 5px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #f1c40f;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+    /* Rend le texte un peu plus discret */
+}

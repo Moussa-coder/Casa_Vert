@@ -1,0 +1,106 @@
+ /* Galerie Photo */
+ .gallery {
+     padding: 4rem 2rem;
+     background: #fff;
+ }
+
+ .gallery-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 1rem;
+     margin-top: 2rem;
+ }
+
+ .gallery-item {
+     position: relative;
+     overflow: hidden;
+     border-radius: 8px;
+     cursor: pointer;
+     aspect-ratio: 1;
+ }
+
+ .gallery-item img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: transform 0.3s;
+ }
+
+ .gallery-item:hover img {
+     transform: scale(1.1);
+ }
+
+ /* Menu Hamburger */
+ .menu-toggle {
+     display: none;
+     cursor: pointer;
+     font-size: 1.5rem;
+ }
+
+ @media (max-width: 768px) {
+     .menu-toggle {
+         display: block;
+     }
+
+     .nav-links {
+         display: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         background: rgba(0, 0, 0, 0.9);
+         flex-direction: column;
+         padding: 1rem;
+         text-align: center;
+     }
+
+     .nav-links.active {
+         display: flex;
+     }
+ }
+
+ /* Carte Interactive */
+ #map {
+     height: 400px;
+     margin: 4rem 0;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Filtres */
+ .filters {
+     text-align: center;
+     margin: 2rem 0;
+ }
+
+ .filter-btn {
+     margin: 0 0.5rem;
+     padding: 0.5rem 1.5rem;
+     border: 2px solid #ff6b6b;
+     background: transparent;
+     color: #ff6b6b;
+     cursor: pointer;
+     transition: all 0.3s;
+ }
+
+ .filter-btn.active {
+     background: #ff6b6b;
+     color: white;
+ }
+
+ /* Thème */
+ :root {
+     --primary-color: #ff6b6b;
+     --bg-color: #ffffff;
+     --text-color: #333333;
+ }
+
+ .dark-theme {
+     --bg-color: #2d3436;
+     --text-color: #ffffff;
+ }
+
+ body {
+     background-color: var(--bg-color);
+     color: var(--text-color);
+ }

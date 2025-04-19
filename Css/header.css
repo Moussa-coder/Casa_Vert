@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    /* Header */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1920x1080/?landscape');
+    background-size: cover;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo {
+    height: 50px;
+    /* Ajuste selon la taille souhaitée */
+    width: auto;
+    object-fit: contain;
+    /* Assure que l'image garde ses proportions */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espace entre l'image et le texte */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+    .nav-links a {
+            display: inline-block;
+            /* Permet de forcer une même largeur */
+            padding: 10px 15px;
+            /* Assure une taille uniforme */
+            text-align: center;
+            min-width: 100px;
+            /* Ajuste si nécessaire */
+        }
+}
+
+.nav-links a:hover {
+color: #1abc9c;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+/* Sous-menu */
+.nav-links li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e;
+    list-style: none;
+    padding: 10px 0;
+    width: 150px;
+}
+
+.nav-links li:hover ul {
+    display: block;
+}
+
+.nav-links li ul li {
+    padding: 5px 15px;
+}
+
+.nav-links li ul li a {
+    color: white;
+    display: block;
+}
+
+.nav-links li ul li a:hover {
+    background-color: #f93e3e;
+}
+
+/* Menu Hamburger */
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #34495e;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav ul li {
+    padding: 10px;
+}
+
+.mobile-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-nav ul li a:hover {
+    background-color: #1abc9c;
+}
+
+/* Affichage du menu mobile */
+#menu-toggle:checked~.mobile-nav {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}

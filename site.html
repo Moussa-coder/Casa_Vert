@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaVert</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./Css/contact.css">
+    <link rel="stylesheet" href="./Css/galerie.css">
+    <link rel="stylesheet" href="./Css/destinations.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/hero.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./Css/footer.css">
+    <link rel="stylesheet" href="./Css/hamburger.css">
+    <link rel="stylesheet" href="./Css/Apropos.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">CasaVert</div>
+            <div class="nav-links">
+                <li>
+                    <a href="#destinations">Destinations</a>
+                    <ul>
+                        <li><a href="#ziguinchor">Ziguinchor</a></li>
+                        <li><a href="#cap Skirring">Cap Skirring</a></li>
+                        <li><a href="#kabrousse">Kabrousse</a></li>
+                        <li><a href="#kolda">Kolda</a></li>
+                        <li><a href="#sédhiou">Sédhiou</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">À propos</a></li>
+            </div>
+        </nav>
+        <!-- Menu Hamburger -->
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="./Images/Avion _ Bateau _ Route _ Taxi.jpeg" alt="">
+        <div class="hero-content">
+            <h1>Découvrez la beauté de la Casamance</h1>
+            <p>Explorez nos destinations exceptionnelles à travers Ziguinchor, Kolda et Sedhiou pour vivre des moments
+                inoubliables </p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>À propos de la Casamance</h2>
+            <p>
+                La Casamance est une région du Sénégal réputée pour sa beauté naturelle, sa culture riche et son
+                hospitalité
+                exceptionnelle.
+                Entre ses plages paradisiaques, ses mangroves luxuriantes et ses villages pittoresques, la Casamance
+                offre
+                une expérience unique aux visiteurs.
+            </p>
+            <p>
+                Que vous soyez amateur d'aventure, de détente ou de découvertes culturelles, la Casamance saura vous
+                émerveiller.
+                Découvrez la danse traditionnelle diola, goûtez aux saveurs locales et laissez-vous séduire par la
+                chaleur
+                de ses habitants.
+            </p>
+            <p>
+                Les paysages variés, entre rizières verdoyantes et forêts tropicales, font de cette région un
+                véritable
+                joyau du Sénégal.
+                Venez explorer la magie de la Casamance et vivez une expérience inoubliable !
+            </p>
+            <p>Nichée entre l’océan Atlantique et les méandres du fleuve Casamance, cette région du Sénégal séduit par
+                son authenticité
+                et sa diversité naturelle. Les voyageurs en quête de sérénité y découvrent des plages de sable fin
+                bordées de cocotiers,
+                tandis que les amateurs d’écotourisme s’aventurent dans les mangroves et les forêts tropicales, où une
+                faune et une
+                flore exceptionnelles prospèrent. Les villages traditionnels, avec leurs cases à impluvium et leur
+                artisanat local,
+                témoignent d’un mode de vie ancestral préservé, invitant à une immersion totale dans la culture
+                casamançaise.
+            </p>
+            <p>Mais la Casamance, c’est aussi une terre de traditions vivantes et de rencontres chaleureuses. Les
+                rythmes des
+                percussions accompagnent les danses endiablées des Diolas, tandis que les marchés colorés regorgent de
+                produits locaux
+                aux saveurs exotiques, comme le yassa, le thiéboudiène ou encore le jus de bouye. Ici, l’hospitalité
+                légendaire des
+                habitants transforme chaque visite en un moment de partage et de découverte. Que ce soit en pirogue sur
+                le fleuve ou à
+                pied à travers les rizières, chaque instant en Casamance révèle une nouvelle facette de cette région
+                envoûtante</p>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2>Nos destinations populaires</h2>
+        <div class="cards-container">
+
+            <!-- Répéter ce bloc pour chaque destination -->
+            <div class="card">
+                <img src="./Images/LES ALIZÉS BEACH RESORT _ tarifs 2025 et 189 avis.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Cap Skiring</h3>
+                    <p>Le Cap Skirring (ou Cap Skiring) est un cap à l'extrémité sud-ouest du Sénégal dans le
+                        département d'Oussouye et la
+                        région de Ziguinchor, en Casamance.Le Cap Skirring (ou Cap Skiring) est un cap à l'extrémité
+                        sud-ouest du Sénégal dans le
+                    </p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+
+            <!-- Ajouter d'autres destinations ici -->
+            <div class="card">
+                <img src="./Images/Excursions Cap Skirring Casamance Hôtel Papayer Ecolodge.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Cap Skirring</h3>
+                    <p>C'est également un village situé à proximité immédiate du cap et à environ 70 km de Ziguinchor.
+                        C'est également un village situé à proximité immédiate du cap et à environ 70 km de Ziguinchor.
+                        C'est également un village situé à proximité immédiate du
+                    </p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/Club Med Resort Cap Skirring - All-inclusive vakanties Afrika.jpeg"
+                    alt="Destination"><br>
+                <div class="card-content">
+                    <h3>Cap Skirring</h3>
+                    <p>Cap Skirring bénéficie d'un climat tropical de type Aw selon la classification de Köppen, avec
+                        une température annuelle
+                        moyenne de 26,2 °C et des précipitations d'environ 1 273 mm par an, nettement plus abondantes en
+                        été qu'en hiver5.</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/17 hotels in Ziguinchor, Senegal_.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Ziguinchor</h3>
+                    <p>La région de Ziguinchor est l'une des 14 régions administratives du Sénégal. Frontalière avec la
+                        Gambie au nord et la
+                        Guinée-Bissau au sud, elle forme la partie occidentale de la Casamance, connue sous le nom de
+                        Basse Casamance. Les
+                        communications avec Dakar passent presque exclusivement par mer ou à travers le territoire de la
+                        Gambie travers le territoire de la
+                        Gambie.</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/Ziguinchor, the gem of Casamance! A city that….jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Ziguinchor</h3>
+                    <p>La ville de Ziguinchor est le chef-lieu du département administratif, de la région administrative
+                        de Ziguinchor et de la
+                        région naturelle de la Casamance.La ville de Ziguinchor est le chef-lieu du département
+                        administratif, de la région administrative
+                        de Ziguinchor et de la
+                        région naturelle de la Casamance
+                        région naturelle de la Casamance
+                        région naturelle de la Casamance.</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/Fun Things to Do in Ziguinchor _ Travel Guide (2023) _ Best Tourist Places.jpeg"
+                    alt="Destination">
+                <div class="card-content">
+                    <h3>Ziguinchor</h3>
+                    <p>Ziguinchor est une ville portuaire située sur les berges du fleuve du même nom. La ville est
+                        appréciée des visiteurs qui
+                        apprécient son atmosphère paisible, propice au farniente.
+                        Ziguinchor est une ville cosmopolite et métissée, héritage de son passé de ville-carrefour. Vous
+                        pourrez ainsi entre
+                        divers dialectes selon les quartiers où vous vous trouvez.</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/Jaime Ma Region Ziguinchor.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Kabrousse</h3>
+                    <p>Kabrousse (ou Cabrousse) est un village côtier du Sénégal, situé en Basse-Casamance, à quelques
+                        kilomètres au sud de Cap
+                        Skirring. Il fait partie de la communauté rurale de Diembéring, dans l'arrondissement de
+                        Kabrousse, le département
+                        d'Oussouye et la région de Ziguinchor.Il fait partie de la communauté rurale de Diembéring, dans
+                        l'arrondissement de
+                        Kabrousse,</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/KEUR NIAYE MAISON D'HOTES - Bewertungen, Fotos & Preisvergleich (Senegal_Toubakouta) - Tripadvisor.jpeg"
+                    alt="Destination">
+                <div class="card-content">
+                    <h3>Kabrousse</h3>
+                    <p>Le village de Cabrousse (ou Kabrousse) constitue la principale source de main-d’œuvre du secteur
+                        hôtelier (à la suite de
+                        l’implantation successive des hôtels sur le long de ses plages depuis 1960).Le village de
+                        Cabrousse (ou Kabrousse) constitue la principale source de main-d’œuvre du secteur
+                        hôtelier (à la suite de
+                        l’implantation successive des hôtels sur le long de ses plages depuis 1960)</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/60ff6335-fa42-464d-888f-e83e1f5ce37a.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Kabrousse</h3>
+                    <p>Les recettes du tourisme et des activités annexes sont les causes de mutations sociales et d’un
+                        léger passage de société
+                        de type égalitaire à une société plus ou moins inégalitaire. Les niveaux de vie au sein des
+                        populations connaissent une
+                        évolution inéquitable selon les ménages. Le village de Cabrousse est constitué en majorité de
+                        jeunes âgés de 0 à 15 ans.</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/Dakar Baskets_.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Sedhiou</h3>
+                    <p>La région de Sédhiou est l'une des 14 régions administratives du Sénégal. Elle est située au
+                        centre de la Casamance, ou
+                        Moyenne Casamance.
+                        Elle fait partie des dernières régions créées, en 2008.Elle est située au
+                        centre de la Casamance, ou
+                        Moyenne Casamance.
+                        Elle fait partie des dernières régions créées, en 2008.
+                        Elle fait partie des dernières régions créées, en 2008</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/Danse diola Casamance - Sénégal.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Sedhiou</h3>
+                    <p>La ville est située à 382 km au sud-est de Dakar, par la route le trajet inclut la traversée du
+                        fleuve Gambie par le
+                        Pont Sénégambie qui depuis 2019 a remplacé le ferry1. Les localités les plus proches sont
+                        Badiandian, Bakoum, Bissary
+                        Diounkouya,Sandiniéry, Kerel, Malandiankounda, Badjimor, Banhar et Goudiabiya.Malandiankounda,
+                        Badjimor, Banhar et Goudiabiya Malandiankounda, Badjimor</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/d233bd47-b72b-4258-a2b4-a90016219e00.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Sedhiou</h3>
+                    <p>Sédhiou est, historiquement, un haut lieu de la culture mandingue, mais un brassage de
+                        populations s'est effectué dans
+                        l'intervalle. Au XIXe siècle, Sédhiou est instauré en 1861 comme l'un des sept chef-lieu
+                        d'arrondissement de la Colonie
+                        du Sénégal et dépendances2 jusqu'à la réforme de 1863 qui inscrit le cercle de Sédhiou dans
+                        l'arrondissement de Gorée</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/kolda.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Kolda</h3>
+                    <p>Kolda est une ville du Sénégal située en Haute-Casamance, au sud du pays, à proximité de la
+                        frontière avec la Guinée-Bissau. C'est le chef-lieu de la région et du département du même nom.
+                        C'est le chef-lieu de la région et du département du même nom.C'est le chef-lieu de la région et
+                    </p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/BAMBALI Of Sadio A few weeks ago, I visited Sadio….jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Kolda</h3>
+                    <p>La ville est située sur la route nationale 6 – communément appelée « route du Sud »2 – qui relie
+                        Tambacounda à
+                        Ziguinchor. Dakar, la capitale, se trouve à 670 km3.
+
+                        Les localités les plus proches sont notamment Gaide, Sikilo, Faraba, Faramba et Sisal.qui relie
+                        Tambacounda à
+                        Ziguinchor.</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/Tourisme à Sénégal 2025 _ Visiter Sénégal.jpeg" alt="Destination">
+                <div class="card-content">
+                    <h3>Kolda</h3>
+                    <p>Dans une région giboyeuse, le tourisme cynégétique constitue un important volet de cette activité
+                        : sur environ 3 000
+                        touristes qui visitent la localité chaque année, 800 y viennent pour chasser8.
+
+                        Kolda est desservi par un aérodrome9, situé à Saré Bidji, en périphérie de la ville2.</p>
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie -->
+    <section id="gallery" class="gallery">
+        <h2>Notre Galerie</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./Images/Bissap juice is ready for your thirst _)….jpeg" alt="Casamance">
+            </div>
+            <!-- Ajouter 11 autres images -->
+
+        </div>
+    </section>
+
+    <!-- Carte Interactive -->
+    <!-- <section id="map"></section> -->
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="map-container">
+                <!-- Intégration d'une carte Google Maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31740.31496974737!2d-16.2530672!3d12.5604654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec12f1265c8f3e9%3A0xc9a1f9e6de730d6d!2sZiguinchor!5e0!3m2!1sfr!2ssn!4v1679912334567"
+                    width="100%" height="300%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h2>Contactez-nous</h2>
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>CasaVert</h3>
+                <p>Découvrez la beauté naturelle et culturelle de la Casamance.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CasaVert - Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
